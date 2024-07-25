@@ -1,29 +1,9 @@
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-/* Header Styles */
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-header h1 {
-    margin-bottom: 0.5rem;
-}
 nav {
     display: flex;
     width: 100%;
@@ -33,11 +13,19 @@ nav {
     justify-content: space-between;
     background-color: #000;
 }
+nav img{
+    width: 50px;
+    height: 50px;
+    padding-left: 1%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
 
 nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -49,48 +37,48 @@ nav ul li a {
 nav ul li a:hover {
     color: red;
 }
-/* Container Styles */
-.container {
+
+.skills {
+    padding: 60px 0;
+    background: #f5f5f5;
+}
+
+.skills .container {
     width: 80%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
+    margin: 0 auto;
+    padding-bottom: 10%;
 }
 
-/* Services Section Styles */
-.services {
-    background: #fff;
-    padding: 2rem;
-    margin: 2rem 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.services h2 {
-    margin-bottom: 1.5rem;
+.skills h2 {
     text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
 }
 
-.service-list {
+.skill-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 20px;
+    justify-content: center;
 }
 
-.service-item {
-    flex: 1 1 30%;
-    background: #f4f4f4;
-    padding: 1.5rem;
+.skill-item {
+    background: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
-.service-item h3 {
-    margin-bottom: 0.5rem;
+.skill-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.service-item p {
-    margin-bottom: 1rem;
+.skill-item p {
+    color: #555;
+    line-height: 1.6;
 }
 
 .soc {
@@ -98,7 +86,7 @@ nav ul li a:hover {
     bottom: 0;
     width: 100%;
     background: #000;
-    padding: 10px 10PX;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -117,7 +105,26 @@ nav ul li a:hover {
     margin: 0 12px;
 }
 
-.soc p{
+.soc p {
     color: red;
     padding-top: 1%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .skill-item {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .soc a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .soc p {
+        font-size: 14px;
+    }
 }

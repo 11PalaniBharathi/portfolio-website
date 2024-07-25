@@ -1,3 +1,4 @@
+/* Base styles */
 * {
     margin: 0;
     padding: 0;
@@ -20,11 +21,19 @@ nav {
     justify-content: space-between;
     background-color: #000;
 }
+nav img{
+    width: 50px;
+    height: 50px;
+    padding-left: 1%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
 
 nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -36,7 +45,6 @@ nav ul li a {
 nav ul li a:hover {
     color: red;
 }
-
 .dete1 {
     margin-left: 8%;
     margin-top: 13%;
@@ -48,18 +56,16 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.dete1 h2{
-    
-        font-size: 40px;
-        color: transparent;
-        -webkit-text-stroke: .5px #fff;
-        background-image: linear-gradient(#050a0c, #00abf0);
-        background-repeat: no-repeat;
-        -webkit-background-clip: text;
-        background-position: -410px 0;
-        animation: animateText 6s linear infinite;
-       }
-
+.dete1 h2 {
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: .5px #fff;
+    background-image: linear-gradient(#050a0c, #00abf0);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -410px 0;
+    animation: animateText 6s linear infinite;
+}
 
 span {
     color: red;
@@ -131,7 +137,100 @@ span {
     margin: 0 12px;
 }
 
-.soc p{
+.soc p {
     color: red;
     padding-top: 1%;
+}
+
+/* Media Queries */
+
+/* Mobile Phones */
+@media only screen and (max-width: 480px) {
+    .dete1 {
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+
+    .dete1 h1 {
+        font-size: 30px;
+    }
+
+    .dete1 h2 {
+        font-size: 20px;
+    }
+
+    .dete1 p {
+        font-size: 14px;
+    }
+
+    .dete1 a {
+        padding: 8px 16px;
+    }
+
+    .images {
+        width: 60%;
+        height: auto;
+        right: 0;
+        bottom: 5%;
+    }
+
+    .images img {
+        height: auto;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .soc a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .soc p {
+        font-size: 14px;
+    }
+}
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
+    .dete1 {
+        margin-left: 6%;
+        margin-top: 12%;
+    }
+
+    .dete1 h1 {
+        font-size: 40px;
+    }
+
+    .dete1 h2 {
+        font-size: 28px;
+    }
+
+    .dete1 p {
+        font-size: 16px;
+    }
+
+    .dete1 a {
+        padding: 10px 20px;
+    }
+
+    .images {
+        width: 50%;
+        right: 50px;
+    }
+
+    .images img {
+        width: 90%;
+    }
+
+    .soc a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .soc p {
+        font-size: 16px;
+    }
 }

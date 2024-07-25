@@ -1,0 +1,115 @@
+/* media-queries.css */
+
+/* Mobile Phones */
+@media only screen and (max-width: 480px) {
+    .dete1 h1 {
+        font-size: 40px;
+    }
+
+    .dete1 h2 {
+        font-size: 24px;
+    }
+
+    .dete1 p {
+        font-size: 14px;
+    }
+
+    .dete1 a {
+        padding: 8px 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        margin: 10px 0;
+    }
+
+    .soc a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .soc p {
+        font-size: 14px;
+    }
+}
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
+    .dete1 h1 {
+        font-size: 50px;
+    }
+
+    .dete1 h2 {
+        font-size: 28px;
+    }
+
+    .dete1 p {
+        font-size: 16px;
+    }
+
+    .dete1 a {
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        margin: 15px 0;
+    }
+
+    .soc a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .soc p {
+        font-size: 16px;
+    }
+}
+
+/* Desktops and larger screens */
+@media only screen and (min-width: 769px) {
+    .dete1 h1 {
+        font-size: 60px;
+    }
+
+    .dete1 h2 {
+        font-size: 35px;
+    }
+
+    .dete1 p {
+        font-size: 16px;
+    }
+
+    .dete1 a {
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul li a {
+        margin: 0 30px;
+    }
+
+    .soc a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .soc p {
+        font-size: 16px;
+    }
+}

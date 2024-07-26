@@ -110,7 +110,7 @@ nav ul li a:hover {
     padding-top: 1%;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .skill-item {
         width: calc(100% - 20px);

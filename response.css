@@ -1,6 +1,4 @@
-/* media-queries.css */
 
-/* Mobile Phones */
 @media only screen and (max-width: 480px) {
     .dete1 h1 {
         font-size: 40px;
@@ -38,7 +36,6 @@
     }
 }
 
-/* Tablets */
 @media only screen and (max-width: 768px) {
     .dete1 h1 {
         font-size: 50px;
@@ -76,7 +73,6 @@
     }
 }
 
-/* Desktops and larger screens */
 @media only screen and (min-width: 769px) {
     .dete1 h1 {
         font-size: 60px;

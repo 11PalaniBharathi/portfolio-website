@@ -142,9 +142,6 @@ span {
     padding-top: 1%;
 }
 
-/* Media Queries */
-
-/* Mobile Phones */
 @media only screen and (max-width: 480px) {
     .dete1 {
         margin-left: 5%;
@@ -233,4 +230,5 @@ span {
     .soc p {
         font-size: 16px;
     }
+    
 }
